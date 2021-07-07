@@ -112,7 +112,7 @@ The `run` method (called by the main method), registers our `ArtistApiResource` 
 ### Build and run
 We can now build an executable jar. In a terminal, run `mvn package`. Once the build has finished, you should see a fat jar (>10MB) called `restAPI-dropwizard-lab-1.0-SNAPSHOT.jar` in the `target/` folder. Executing this with the parameters `server` and the path to our config file will start up our server:
 ```
-java -jar target/restAPI-dropwizard-lab-1.0-SNAPSHOT.jar server artistApiConfig.yaml
+java -jar target/restAPI-dropwizard-lab-1.0-SNAPSHOT.jar server src/main/resources/artistApiConfig.yaml
 ```
 
 ### Try it out
